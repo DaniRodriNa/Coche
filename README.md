@@ -21,4 +21,4 @@ Además sabremos cuando el vehiculo ha arrancado, la distancia que avanza, el ti
 - Daniel Rodriguez
 
 ## Estado del proyecto
- 🟠 En progreso 🟠
+ 🔵 Mejorando 🔵
