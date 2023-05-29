@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"es.cursojava.model","l":"Camion"},{"p":"es.cursojava.model","l":"Coche"},{"p":"es.cursojava.interfaz","l":"Conducible"},{"p":"es.cursojava.principal","l":"Principal"},{"p":"es.cursojava.model","l":"Vehiculo"}];updateSearchResults();

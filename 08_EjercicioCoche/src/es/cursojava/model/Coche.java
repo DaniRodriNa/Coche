@@ -1,7 +1,7 @@
 package es.cursojava.model;
 
 /**
- * Clase padre Coche que contendra las propiedades de un coche Hereda la clase
+ * Clase hija Coche que contendra las propiedades de un coche Hereda la clase
  * Vehiculo
  * 
  * @version 1.0 11-05-23
