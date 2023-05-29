@@ -35,25 +35,31 @@ public class Principal {
 		 * @param velocidad     variable que recogera el resultado de la velocidad
 		 */
 		if (tiempoInicial < tiempoFinal) {
-			// Considero que la distancia es el espacio recorrido del vehiculo desde que
-			// inicio hasta que paro, hacemos una conversión a KMs
+			/** Considero que la distancia es el espacio recorrido del vehiculo desde que
+			* inicio hasta que paro, hacemos una conversión a KMs
+			*/
 			distancia = (distancia / 1000);
-			// Calculo el tiempo total, convirtiendo el resultado de restar el tiempo
-			// inicial, y el tiempo final en HORAS
+			/** Calculo el tiempo total, convirtiendo el resultado de restar el tiempo
+			* inicial, y el tiempo final en HORAS
+			*/
 			tiempoTotal = (tiempoFinal - tiempoInicial) / 60;
 			velocidad = vehiculo.velocidad(distancia, tiempoTotal);
-
+			
 			if (velocidad <= vehiculo.getVelocidadMax()) {
+				vehiculo.rellenarTarco(velocidad);
 				System.out.println("EL VEHICULO CIRCULA A : " + velocidad + " KM/H");
 				
 			} else {
 				System.out.println("EL VEHICULO NO PUEDE CIRCULAR A ESA VELOCIDAD, EXPLOTO");
 			}
+			if(!vehiculo.getTarcometro().isEmpty()){
+				System.out.println("EL REGISTRO DE VELOCIDADES SON: ");
+				vehiculo.registroVelocidades();
+			}
 		} else {
 			System.out.println("El tiempo inicial debe ser menor que el Final!");
 		}
-		System.out.println("EL REGISTRO DE VELOCIDADES SON: ");
-		vehiculo.registroVelocidades();
+		
 	}
 
 }

@@ -1,6 +1,7 @@
 package es.cursojava.model;
 
-import java.util.Date;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import es.cursojava.interfaz.Conducible;
@@ -24,7 +25,7 @@ public abstract class Vehiculo implements Conducible {
 	private int velocidadMax;
 	private int marchas;
 	private double metros;
-	private List<Double> tarcometro;
+	private List<Double> tarcometro=new ArrayList<>();
 	//private int contador=0;
 
 	/**
@@ -95,7 +96,9 @@ public abstract class Vehiculo implements Conducible {
 	public void setMetros(double metros) {
 		this.metros = metros;
 	}
-	// metodo que visualiza las velocidades insertadas en el tarcometro
+	/**
+	 * Recorre el List de tarcometro y visualiza las velocidades guardadas en el 
+	 */
 	public void registroVelocidades() {
 		for(double velocidad:tarcometro) {
 			System.out.println(velocidad+" km/h");
@@ -134,8 +137,14 @@ public abstract class Vehiculo implements Conducible {
 	public double velocidad(double metros, double tiempo) {
 		//contador++;
 		//tarcometro[contador] = metros / tiempo;
-		tarcometro.add(metros/tiempo);
 		return metros / tiempo;
+	}
+	/**
+	 * 
+	 * @param velocidad Parametro que recoger la velocidad y lo inserta en el tarcometro
+	 */
+	public void rellenarTarco(double velocidad) {
+		tarcometro.add(velocidad);
 	}
 
 	@Override
