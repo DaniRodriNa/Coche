@@ -13,3 +13,12 @@ Además sabremos cuando el vehiculo ha arrancado, la distancia que avanza, el ti
   - Clase abstracta **Vehículo** 
 - es.cursojava.principal
   - Clase **Principal**
+
+## Herramientas Utilizadas
+- Eclipse
+
+## Desarrollador
+- Daniel Rodriguez
+
+## Estado del proyecto
+ 🟠 En progreso 🟠
