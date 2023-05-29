@@ -96,14 +96,7 @@ public abstract class Vehiculo implements Conducible {
 	public void setMetros(double metros) {
 		this.metros = metros;
 	}
-	/**
-	 * Recorre el List de tarcometro y visualiza las velocidades guardadas en el 
-	 */
-	public void registroVelocidades() {
-		for(double velocidad:tarcometro) {
-			System.out.println(velocidad+" km/h");
-		}
-	}
+	
 	@Override
 	public void conducir() {
 		
@@ -127,9 +120,16 @@ public abstract class Vehiculo implements Conducible {
 	public void parar() {
 		System.out.println("El vehiculo ha parado");
 	}
-
 	/**
-	 * 
+	 * Recorre el List de tarcometro y visualiza las velocidades guardadas en el 
+	 */
+	public void registroVelocidades() {
+		for(double velocidad:tarcometro) {
+			System.out.println(velocidad+" km/h");
+		}
+	}
+	/**
+	 * Calcula la velocidad del vehiculo
 	 * @param metros distancia que recorre el vehiculo
 	 * @param tiempo cantidad de tiempo que le ha llevado a recorrer la distancia
 	 * @return devuelve la velocidad metros/tiempo
@@ -140,7 +140,7 @@ public abstract class Vehiculo implements Conducible {
 		return metros / tiempo;
 	}
 	/**
-	 * 
+	 * Inserta velocidades en el tarcometro
 	 * @param velocidad Parametro que recoger la velocidad y lo inserta en el tarcometro
 	 */
 	public void rellenarTarco(double velocidad) {
