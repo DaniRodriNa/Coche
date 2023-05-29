@@ -52,7 +52,8 @@ public class Principal {
 		} else {
 			System.out.println("El tiempo inicial debe ser menor que el Final!");
 		}
-
+		System.out.println("EL REGISTRO DE VELOCIDADES SON: ");
+		vehiculo.registroVelocidades();
 	}
 
 }

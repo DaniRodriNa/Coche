@@ -38,7 +38,7 @@ public abstract class Vehiculo implements Conducible {
 	 * @param caballos     Potencia (caballos,cv) del vehiculo
 	 * @param velocidadMax Velocidad maxima que alcanza el vehiculo en KM/H
 	 * @param marchas      Numero de marchas que tiene el vehiculo.
-	 * @param tarcometro   Array que almacenara las velocidades realizadas por el
+	 * @param tarcometro   List de tipo Double que almacenara las velocidades realizadas por el
 	 *                     vehiculo
 	 */
 
@@ -80,13 +80,13 @@ public abstract class Vehiculo implements Conducible {
 	}
 	
 
-	/*public List<Double> getTarcometro() {
+	public List<Double> getTarcometro() {
 		return tarcometro;
 	}
 
 	public void setTarcometro(List<Double> tarcometro) {
 		this.tarcometro = tarcometro;
-	}*/
+	}
 
 	public double getMetros() {
 		return metros;
@@ -94,6 +94,12 @@ public abstract class Vehiculo implements Conducible {
 
 	public void setMetros(double metros) {
 		this.metros = metros;
+	}
+	// metodo que visualiza las velocidades insertadas en el tarcometro
+	public void registroVelocidades() {
+		for(double velocidad:tarcometro) {
+			System.out.println(velocidad+" km/h");
+		}
 	}
 	@Override
 	public void conducir() {
