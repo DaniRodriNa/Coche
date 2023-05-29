@@ -1,6 +1,7 @@
 package es.cursojava.model;
 
 import java.util.Date;
+import java.util.List;
 
 import es.cursojava.interfaz.Conducible;
 
@@ -23,7 +24,7 @@ public abstract class Vehiculo implements Conducible {
 	private int velocidadMax;
 	private int marchas;
 	private double metros;
-	//private double[] tarcometro;
+	private List<Double> tarcometro;
 	//private int contador=0;
 
 	/**
@@ -79,11 +80,11 @@ public abstract class Vehiculo implements Conducible {
 	}
 	
 
-	/*public double[] getTarcometro() {
+	/*public List<Double> getTarcometro() {
 		return tarcometro;
 	}
 
-	public void setTarcometro(double[] tarcometro) {
+	public void setTarcometro(List<Double> tarcometro) {
 		this.tarcometro = tarcometro;
 	}*/
 
@@ -127,6 +128,7 @@ public abstract class Vehiculo implements Conducible {
 	public double velocidad(double metros, double tiempo) {
 		//contador++;
 		//tarcometro[contador] = metros / tiempo;
+		tarcometro.add(metros/tiempo);
 		return metros / tiempo;
 	}
 

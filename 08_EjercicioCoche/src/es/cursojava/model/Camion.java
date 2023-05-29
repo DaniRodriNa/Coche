@@ -8,10 +8,11 @@ package es.cursojava.model;
  *
  */
 public class Camion extends Vehiculo{
+	
+	private static final int NUMRUEDAS=8;
 	/**
 	 * @param NUMRUEDAS -> constante de tipo entero que tendra el valor de 8
 	 */
-	private static final int NUMRUEDAS=8;
 
 	public Camion(String matricula, int numRuedas, String marca, String color, int numPuertas, int centCubicos,
 			int caballos, int velocidadMax, int marchas) {
