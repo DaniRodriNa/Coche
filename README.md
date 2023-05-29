@@ -5,11 +5,11 @@ Además sabremos cuando el vehiculo ha arrancado, la distancia que avanza, el ti
 
 ## Estructura
 ### Paquetes
-* es.cursojava.interfaz
- - Interfaz **Conducible**
-* es.cursojava.model
- - Clase **Coche** 
- - Clase **Camion**
- - Clase abstracta **Vehículo** 
-* es.cursojava.principal
- - Clase **Principal**
+- es.cursojava.interfaz
+  - Interfaz **Conducible**
+- es.cursojava.model
+  - Clase **Coche** 
+  - Clase **Camion**
+  - Clase abstracta **Vehículo** 
+- es.cursojava.principal
+  - Clase **Principal**
